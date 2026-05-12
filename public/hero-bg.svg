@@ -1,0 +1,36 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- xAI-style dark cosmic background with subtle grid and glow -->
+  <rect width="1920" height="1080" fill="#0c0c0b"/>
+  
+  <!-- Subtle grid pattern -->
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+    </pattern>
+    
+    <!-- Radial gradient for center glow -->
+    <radialGradient id="centerGlow" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:rgba(37,99,235,0.15);stop-opacity:1" />
+      <stop offset="50%" style="stop-color:rgba(37,99,235,0.05);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(12,12,11,0);stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Grid overlay -->
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  
+  <!-- Center glow effect -->
+  <ellipse cx="960" cy="540" rx="800" ry="600" fill="url(#centerGlow)"/>
+  
+  <!-- Floating abstract shapes -->
+  <circle cx="300" cy="200" r="2" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="1600" cy="300" r="3" fill="rgba(255,255,255,0.08)"/>
+  <circle cx="500" cy="800" r="2" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="1400" cy="700" r="2" fill="rgba(255,255,255,0.09)"/>
+  <circle cx="800" cy="150" r="1.5" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="1200" cy="900" r="2.5" fill="rgba(255,255,255,0.07)"/>
+  
+  <!-- Subtle line elements -->
+  <line x1="100" y1="400" x2="400" y2="400" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <line x1="1500" y1="600" x2="1800" y2="600" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+</svg>

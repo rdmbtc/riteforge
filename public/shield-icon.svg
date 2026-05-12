@@ -1,0 +1,32 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- xAI-style shield/security icon -->
+  <rect width="400" height="400" fill="#0c0c0b"/>
+  
+  <!-- Shield outline -->
+  <path d="M 200 60 L 320 120 L 320 220 C 320 280 280 320 200 340 C 120 320 80 280 80 220 L 80 120 L 200 60 Z" 
+        stroke="#1f2228" stroke-width="3" fill="none"/>
+  
+  <!-- Inner shield detail -->
+  <path d="M 200 90 L 290 135 L 290 210 C 290 255 260 285 200 300 C 140 285 110 255 110 210 L 110 135 L 200 90 Z" 
+        stroke="#474747" stroke-width="2" fill="none"/>
+  
+  <!-- Checkmark with electric blue -->
+  <path d="M 160 200 L 185 225 L 240 170" 
+        stroke="#2563eb" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Scan lines effect -->
+  <line x1="80" y1="150" x2="320" y2="150" stroke="#7d8187" stroke-width="0.5" opacity="0.3"/>
+  <line x1="80" y1="180" x2="320" y2="180" stroke="#7d8187" stroke-width="0.5" opacity="0.3"/>
+  <line x1="80" y1="210" x2="320" y2="210" stroke="#7d8187" stroke-width="0.5" opacity="0.3"/>
+  <line x1="80" y1="240" x2="320" y2="240" stroke="#7d8187" stroke-width="0.5" opacity="0.3"/>
+  
+  <!-- Subtle glow -->
+  <circle cx="200" cy="200" r="140" fill="url(#shieldGlow)" opacity="0.2"/>
+  
+  <defs>
+    <radialGradient id="shieldGlow">
+      <stop offset="0%" style="stop-color:rgba(37,99,235,0.15);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(37,99,235,0);stop-opacity:0" />
+    </radialGradient>
+  </defs>
+</svg>

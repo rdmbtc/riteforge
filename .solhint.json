@@ -1,0 +1,12 @@
+{
+  "extends": "defaults",
+  "rules": {
+    "avoid-suicide": "error",
+    "avoid-tx-origin": "warn",
+    "compiler-versions": ["error", "^0.8.0"],
+    "func-visibility": ["error", {"ignoreConstructors": true}],
+    "max-line-length": ["warning", 120],
+    "not-rely-on-time": "warn",
+    "reason-string": ["warn", {"maxLength": 50}]
+  }
+}
