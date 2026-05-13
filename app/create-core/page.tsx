@@ -79,7 +79,10 @@ export default function CreateCorePage() {
     setTxHistory(history)
   }
 
-  const handleCreateToken = async (type: "core" | "advanced") => {
+  const handleCreateToken = async (e: React.MouseEvent, type: "core" | "advanced") => {
+    e.preventDefault()
+    e.stopPropagation()
+    
     if (!isConnected || !address) {
       toast.error("Connect wallet first")
       return
@@ -244,7 +247,8 @@ export default function CreateCorePage() {
                     </div>
 
                     <motion.button
-                      onClick={() => handleCreateToken("core")}
+                      type="button"
+                      onClick={(e) => handleCreateToken(e, "core")}
                       disabled={isCreating || isConfirming || !isConnected}
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
@@ -319,7 +323,8 @@ export default function CreateCorePage() {
                     </div>
 
                     <motion.button
-                      onClick={() => handleCreateToken("advanced")}
+                      type="button"
+                      onClick={(e) => handleCreateToken(e, "advanced")}
                       disabled={isCreating || isConfirming || !isConnected}
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
